@@ -11,6 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery.countdown
 //= require turbolinks
 //= require_tree .
+
+
+function refreshPage() {
+    location.reload();
+}

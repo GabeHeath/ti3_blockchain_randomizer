@@ -1,0 +1,82 @@
+/*
+*= require jquery.countdown
+*/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.input-container {
+  background-color: rgb(229, 229, 229);;
+  padding: 25px;
+  border-radius: 4px;
+
+  .padded-race {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+.two-column {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.start-btn {
+  margin-left: 50px;
+  width: calc(100% - 50px) !important;
+}
+
+.player-input {
+  margin-bottom: 4px;
+}
+
+.activity {
+  border-bottom: solid 1px #CCCCCC;
+  padding: 3px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  em {
+    color: #777777;
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  .activity-time {
+    font-size: .8em;
+    color: darkgray;
+  }
+  .list-icon {
+    margin-right: 10px;
+  }
+  .winner {
+    color: rgba(255, 0, 0, 0.54);
+    font-weight: 900;
+    border-radius: 4px;
+  }
+}
+
+#countdown {
+  height: 60px;
+  border-radius: 4px;
+}
+
+.short-row {
+  line-height: 10px !important;
+}
+
+.checksum {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.small-block-text {
+  font-size: 8px;
+  color: gray;
+}
+
+.recent-activity {
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+<%= form_for(@randomizer) do |f| %>
+  <% if @randomizer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@randomizer.errors.count, "error") %> prohibited this randomizer from being saved:</h2>
+
+      <ul>
+      <% @randomizer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="col-md-3 col-md-offset-1 input-container">
+        <%= f.text_field :player_1, class: "form-control player-input", placeholder: "Player 1"  %>
+        <%= f.text_field :player_2, class: "form-control player-input", placeholder: "Player 2"  %>
+        <%= f.text_field :player_3, class: "form-control player-input", placeholder: "Player 3"  %>
+        <%= f.text_field :player_4, class: "form-control player-input", placeholder: "Player 4"  %>
+        <%= f.text_field :player_5, class: "form-control player-input", placeholder: "Player 5"  %>
+        <%= f.text_field :player_6, class: "form-control player-input", placeholder: "Player 6"  %>
+        <%= f.text_field :player_7, class: "form-control player-input", placeholder: "Player 7"  %>
+        <%= f.text_field :player_8, class: "form-control player-input", placeholder: "Player 8"  %>
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="col-md-11 col-md-offset-1 two-column input-container">
+        <%= f.check_box :arborec, class: "padded-race" %> The Arborec <br>
+        <%= f.check_box :barony, class: "padded-race" %> The Barony of Letnev <br>
+        <%= f.check_box :yin, class: "padded-race" %> The Brotherhood of Yin <br>
+        <%= f.check_box :saar, class: "padded-race" %> The Clan of Saar <br>
+        <%= f.check_box :muaat, class: "padded-race" %> The Embers of Muaat <br>
+        <%= f.check_box :hacan, class: "padded-race" %> The Emirates of Hacan <br>
+        <%= f.check_box :sol, class: "padded-race" %> The Federation of Sol <br>
+        <%= f.check_box :creuss, class: "padded-race" %> The Ghosts of Creuss <br>
+        <%= f.check_box :l1z1x, class: "padded-race" %> The L1Z1X Mindnet <br>
+        <%= f.check_box :mentak, class: "padded-race" %> The Mentak Coalition <br>
+        <%= f.check_box :naalu, class: "padded-race" %> The Naalu Collective <br>
+        <%= f.check_box :nekro, class: "padded-race" %> The Nekro Virus <br>
+        <%= f.check_box :sardakk, class: "padded-race" %> The Sardakk N'orr <br>
+        <%= f.check_box :jolnar, class: "padded-race" %> The Universities of Jol-Nar <br>
+        <%= f.check_box :winnu, class: "padded-race" %> The Winnu <br>
+        <%= f.check_box :xxcha, class: "padded-race" %> The Xxcha Kingdom <br>
+        <%= f.check_box :yssaril, class: "padded-race" %> The Yssaril Tribes <br>
+        <%= f.check_box :lazax, class: "padded-race" %> The Lazax <br>
+      </div>
+
+      <%= f.submit 'Start Randomization', class: "btn btn-block btn-primary start-btn", id: "start" %>
+    </div>
+
+<% end %>
