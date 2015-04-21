@@ -573,9 +573,6 @@ class RandomizersController < ApplicationController
       instance.rand_r18 = race
       instance.r18_hash = instance.last_block_hash
       instance.save
-    else
-      instance.clock = Time.now - 100.days
-      instance.save
     end
   end
 end
